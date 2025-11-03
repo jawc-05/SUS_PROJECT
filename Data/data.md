@@ -23,16 +23,19 @@ create table tb_municip(
   nu_longit  char(18),
   nu_altitud char(4),
   nu_area    char(10));
+  
 create table tb_micibge(
-  co_micibge numeric(5),
+  co_micibge char(6),
   co_status  char(1),
   ds_nome    char(41),
   ds_nomepad char(41),
   ds_abrev   char(21),
   nu_ordem   numeric(1));
+  
 create table rl_municip_micibge(
-  co_municip numeric(6),
-  co_micibge numeric(5));
+  co_municip char(6),
+  co_micibge char(6));
+  
 create table pars2508(
   pa_coduni  char(7),
   pa_gestao  char(6),
@@ -94,9 +97,11 @@ create table pars2508(
   pa_srv_c   char(6),
   pa_ine     char(10),
   pa_nat_jur char(4));
+  
 create table tb_sigtaw(
   ip_cod     char(10),
   ip_dscr    char(150));
+  
 create table s_cid(
   cd_cod     char(4),
   opc        char(1),
@@ -107,9 +112,11 @@ create table s_cid(
   campos_rad char(3),
   estadio    char(1),
   repete_rad char(1));
+  
 create table cbo(
   cbo        char(6),
   ds_cbo     char(150));
+  
 create table cadgerrs(
   cnes       char(7),
   cpf_cnpj   char(14),
